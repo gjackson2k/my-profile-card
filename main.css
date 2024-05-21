@@ -6,7 +6,17 @@ body {
 }
 
 /* ----------Nav Styles---------------- */
+nav {
+  background-color: #f7cbfa;
+}
 
+.navbar-brand {
+  color: #40a971;
+}
+
+a {
+  color: #2283aa;
+}
 /* ----------Text Styles--------------- */
 
 h1 {
