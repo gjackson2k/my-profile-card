@@ -5,6 +5,12 @@ body {
   background: #f4f4f4;
 }
 
+/* 
+#2283aa - Blue
+#40a971 - Green
+#F7CBFA - Pink
+*/
+
 /* ----------Nav Styles---------------- */
 
 /* ----------Text Styles--------------- */
@@ -20,9 +26,10 @@ h1 {
   margin: 20px auto;
   padding: 20px;
   width: 80%;
-  max-width: 600px;
+  max-width: 400px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
+  /* position: relative; */
 }
 
 .profile-card img {
@@ -37,6 +44,13 @@ h1 {
   font-size: 16px;
   line-height: 1.5;
   color: #666;
+}
+
+.profile-container {
+  /* margin: 20px auto; */
+  display: flex;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  /* grid-gap: 40px; */
 }
 
 /* --------Footer CSS--------- */
