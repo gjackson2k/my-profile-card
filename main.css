@@ -1,0 +1,95 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+}
+
+/* ----------Nav Styles---------------- */
+
+/* ----------Text Styles--------------- */
+
+h1 {
+  color: black;
+}
+
+/* ----------Profile Card CSS---------- */
+.profile-card {
+  background: white;
+  border: 1px solid #ddd;
+  margin: 20px auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.profile-card img {
+  border-radius: 50%;
+}
+
+.profile-card h2 {
+  color: #333;
+}
+
+.profile-card p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666;
+}
+
+/* --------Footer CSS--------- */
+footer {
+  background-color: #333;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.footer-section {
+  margin: 5px;
+}
+
+.footer-section h3 {
+  color: #ffff99;
+  font-size: 14px;
+}
+
+.footer-section p,
+.footer-section li a {
+  color: #cccccc;
+  font-size: 12px;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section li a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s;
+}
+
+.footer-section li a:hover {
+  color: #ffffff;
+}
+
+.footer-bottom {
+  margin-top: 10px;
+  border-top: 1px solid #444;
+  padding-top: 5px;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
