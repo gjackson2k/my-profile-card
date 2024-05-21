@@ -21,9 +21,16 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        height: 28vh;
         background: #9999cc;
         margin: 0;
+      }
+      nav {
+        background: #333;
+      }
+      .NavBar {
+        display: flex;
+        justify-content: center;
       }
 
       ul {
@@ -169,16 +176,17 @@
   <body>
     <header>
       <h1>Team Triple A's Profile Cards</h1>
-      <br />
-      <nav>
+    </header>
+    <nav>
+      <div class="NavBar">
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Contact</a></li>
           <li><a href="#">Services</a></li>
         </ul>
-      </nav>
-    </header>
+      </div>
+    </nav>
     <div class="profile-card">
       <img
         src="https://picsum.photos/100"
