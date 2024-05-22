@@ -103,64 +103,74 @@
       </div>
     </main>
 
-    <footer>
-      <div class="footer-content">
-        <div class="footer-section">
-          <h3>Contact Us</h3>
-          <!-- we used email logo and clickable email address -->
-          <p>
-            <span style="font-size: 20px">✉</span>
-            <a href="mailto:example@gmail.com">example@gmail.com</a>
-          </p>
-          <p>Phone: 123-456-7890</p>
-        </div>
-        <div class="footer-section">
-          <h3>Follow Us</h3>
-          <!-- we used social media icons and clickable links -->
-          <ul class="social-links">
-            <li>
-              <a href="https://www.instagram.com/"
-                ><img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png"
-                  alt="Instagram"
-              /></a>
-            </li>
-            <li>
-              <a href="https://twitter.com/"
-                ><img
-                  src="https://www.vectorlogo.zone/logos/twitter/twitter-icon.svg"
-                  alt="Twitter"
-              /></a>
-            </li>
-            <li>
-              <a href="https://www.facebook.com/"
-                ><img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1200px-Facebook_f_logo_%282019%29.svg.png"
-                  alt="Facebook"
-              /></a>
-            </li>
-          </ul>
-        </div>
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Footer Section -->
+  <footer id="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <!-- Email and phone -->
+        <p><span style="font-size: 20px;">✉</span> <a href="mailto:example@gmail.com">example@gmail.com</a></p>
+        <p>Phone: 123-456-7890</p>
       </div>
-      <div class="footer-bottom">
-        <p>&copy; 2024 My Profile Cards. All rights reserved.</p>
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <!-- Social media links -->
+        <ul class="social-links">
+          <li><a href="https://www.instagram.com/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png" alt="Instagram"></a></li>
+          <li><a href="https://twitter.com/"><img src="https://www.vectorlogo.zone/logos/twitter/twitter-icon.svg" alt="Twitter"></a></li>
+          <li><a href="https://www.facebook.com/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1200px-Facebook_f_logo_%282019%29.svg.png" alt="Facebook"></a></li>
+          <li><a href="https://github.com/"><img src="https://www.vectorlogo.zone/logos/github/github-icon.svg" alt="GitHub"></a></li>
+        </ul>
       </div>
-    </footer>
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9I7cM9go2fEnN70lbXj9QQ7txoHSm8DO/ebE"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-    <script src="script.js"></script>
-  </body>
+      <div class="footer-section">
+        <h3>Contact Form</h3>
+        <!-- Contact form -->
+        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+          <div class="row">
+            <div class="form-group col-md-6">
+              <label for="name">Your Name</label>
+              <input type="text" name="name" class="form-control" id="name" required>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="email">Your Email</label>
+              <input type="email" class="form-control" name="email" id="email" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" class="form-control" name="subject" id="subject" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Tell us more about your needs</label>
+            <textarea class="form-control" name="message" rows="5" required style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);"></textarea>
+          </div>
+          <div class="my-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your message has been sent. Thank you!</div>
+          </div>
+          <div class="text-center"><button type="submit">Send Message</button></div>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 My Profile Cards. All rights reserved. <a href="privacy-policy.html">Privacy Policy</a></p>
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
