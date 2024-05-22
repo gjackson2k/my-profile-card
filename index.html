@@ -61,6 +61,7 @@
       }
 
       .footer-section {
+        color: #fff;
         margin: 5px;
       }
 
@@ -71,25 +72,28 @@
 
       .footer-section p,
       .footer-section li a {
-        color: #cccccc;
+        color: #ffffff;
         font-size: 12px;
       }
 
       .footer-section ul {
         list-style-type: none;
+        color: #fff;
         padding: 0;
       }
 
       .footer-section li a {
         text-decoration: none;
-        color: inherit;
+        color: #fff;
         transition: color 0.3s;
       }
 
       .footer-section li a:hover {
         color: #ffffff;
       }
-
+      .footer-section .email-link {
+        color: #ffff;
+      }
       .footer-bottom {
         margin-top: 10px;
         border-top: 1px solid #444;
@@ -114,6 +118,9 @@
 
       .profile-card img {
         border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
       }
 
       .profile-card h3 {
@@ -143,13 +150,30 @@
     </header>
     <div class="profile-card">
       <img
-        src="https://picsum.photos/100"
+        src="/Users/biniyamfekedegebreyohannes/Documents/GitHub/hands-on-selector-2-spr24/my-profile-card_Biniyam_G/photo_5895281688722915372_y.jpg"
         alt="Profile Image"
         class="profile-photo"
       />
       <h3>Biniyam Gebreyohannes</h3>
       <p>
-        Biniyam_G is a passionate web developer with expertise in creating
+        Biniyam Gebreyohannes is a passionate web developer and a dedicated Year
+        Up student. He excels in creating user-friendly interfaces and engaging
+        web experiences. Biniyam has a strong foundation in both front-end and
+        back-end development, with proficiency in technologies like HTML, CSS,
+        JavaScript, and various modern frameworks. His commitment to continuous
+        learning and improvement makes him a valuable asset to any development
+        team.
+      </p>
+    </div>
+    <div class="profile-card">
+      <img
+        src="https://picsum.photos/100"
+        alt="Profile Image"
+        class="profile-photo"
+      />
+      <h3>Katie Cea</h3>
+      <p>
+        Katie is a passionate web developer with expertise in creating
         user-friendly interfaces and engaging web experiences.
       </p>
     </div>
@@ -175,9 +199,7 @@
           <h3>Contact</h3>
           <p>
             Email:
-            <a href="mailto:example@example.com"
-              >bgebreyohannes@sea.yearup.org</a
-            >
+            <a href="#" class="email-link">bgebreyohannes@sea.yearup.org</a>
           </p>
         </div>
         <div class="footer-section">
