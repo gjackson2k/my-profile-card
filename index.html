@@ -1,139 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Profile Cards</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <style>
       body {
-          font-family: 'Open Sans', sans-serif;
-          margin: 0;
-          padding: 0;
-          background: #f4f4f4;
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+      .header-content {
+        background-color: #333;
+        padding: 20px;
+        text-align: center;
+      }
+      .header-logo {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      .header-section ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+      }
+      .header-section ul li {
+        display: inline;
+        margin-left: 20px;
+      }
+      .header-section ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+      }
+      .header-section ul li a:hover {
+        text-decoration: underline;
       }
 
       /* Footer CSS */
       footer {
-          background-color: #333;
-          color: #ffffff;
-          text-align: center;
-          padding: 10px;
-          font-size: 12px;
+        background-color: #333;
+        color: #ffffff;
+        text-align: center;
+        padding: 10px;
+        font-size: 12px;
       }
 
       .footer-content {
-          display: flex;
-          justify-content: space-around;
-          padding: 10px;
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
       }
 
       .footer-section {
-          margin: 5px;
+        color: #fff;
+        margin: 5px;
       }
 
       .footer-section h3 {
-          color: #ffff99;
-          font-size: 14px;
+        color: #ffff99;
+        font-size: 14px;
       }
 
-      .footer-section p, .footer-section li a {
-          color: #cccccc;
-          font-size: 12px;
+      .footer-section p,
+      .footer-section li a {
+        color: #ffffff;
+        font-size: 12px;
       }
 
       .footer-section ul {
-          list-style-type: none;
-          padding: 0;
+        list-style-type: none;
+        color: #fff;
+        padding: 0;
       }
 
       .footer-section li a {
-          text-decoration: none;
-          color: inherit;
-          transition: color 0.3s;
+        text-decoration: none;
+        color: #fff;
+        transition: color 0.3s;
       }
 
       .footer-section li a:hover {
-          color: #ffffff;
+        color: #ffffff;
       }
-
+      .footer-section .email-link {
+        color: #ffff;
+      }
       .footer-bottom {
-          margin-top: 10px;
-          border-top: 1px solid #444;
-          padding-top: 5px;
+        margin-top: 10px;
+        border-top: 1px solid #444;
+        padding-top: 5px;
       }
 
       .footer-bottom p {
-          margin: 0;
+        margin: 0;
       }
 
       /* Profile Card CSS */
       .profile-card {
-          background: white;
-          border: 1px solid #ddd;
-          margin: 20px auto;
-          padding: 20px;
-          width: 80%;
-          max-width: 600px;
-          box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-          text-align: center;
+        background: white;
+        border: 1px solid #ddd;
+        margin: 20px auto;
+        padding: 20px;
+        width: 80%;
+        max-width: 600px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        text-align: center;
       }
 
       .profile-card img {
-          border-radius: 50%;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
       }
 
-      .profile-card h2 {
-          color: #333;
+      .profile-card h3 {
+        color: #333;
       }
 
       .profile-card p {
-          font-size: 16px;
-          line-height: 1.5;
-          color: #666;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #666;
       }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>My Profile Cards</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Services</a></li>
-            </ul>
-        </nav>
+      <div class="header-content">
+        <a href="#" class="header-logo">My Profile Cards</a>
+        <div class="header-section">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Services</a></li>
+          </ul>
+        </div>
+      </div>
     </header>
     <div class="profile-card">
-        <img src="https://picsum.photos/100" alt="Profile Image" class="profile-photo">
-        <h3>John Doe</h3>
-        <p>John is a passionate web developer with expertise in creating user-friendly interfaces and engaging web experiences.</p>
+      <img
+        src="/Users/biniyamfekedegebreyohannes/Documents/GitHub/hands-on-selector-2-spr24/my-profile-card_Biniyam_G/photo_5895281688722915372_y.jpg"
+        alt="Profile Image"
+        class="profile-photo"
+      />
+      <h3>Biniyam Gebreyohannes</h3>
+      <p>
+        Biniyam Gebreyohannes is a passionate web developer and a dedicated Year
+        Up student. He excels in creating user-friendly interfaces and engaging
+        web experiences. Biniyam has a strong foundation in both front-end and
+        back-end development, with proficiency in technologies like HTML, CSS,
+        JavaScript, and various modern frameworks. His commitment to continuous
+        learning and improvement makes him a valuable asset to any development
+        team.
+      </p>
+    </div>
+    <div class="profile-card">
+      <img
+        src="https://picsum.photos/100"
+        alt="Profile Image"
+        class="profile-photo"
+      />
+      <h3>Katie Cea</h3>
+      <p>
+        Katie is a passionate web developer with expertise in creating
+        user-friendly interfaces and engaging web experiences.
+      </p>
+    </div>
+    <div class="profile-card">
+      <img
+        src="https://picsum.photos/100"
+        alt="Profile Image"
+        class="profile-photo"
+      />
+      <h3>Ernesto Martinez</h3>
+      <p>
+        Ernesto is a passionate web developer with expertise in creating
+        user-friendly interfaces and engaging web experiences.
+      </p>
     </div>
     <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>About Us</h3>
-                <p>Details about the company.</p>
-            </div>
-            <div class="footer-section">
-                <h3>Contact</h3>
-                <p>Email: example@example.com</p>
-            </div>
-            <div class="footer-section">
-                <h3>Follow Us</h3>
-                <ul>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">Instagram</a></li>
-                </ul>
-            </div>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>About Us</h3>
+          <p>Details about the company.</p>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 My Profile Cards. All rights reserved.</p>
+        <div class="footer-section">
+          <h3>Contact</h3>
+          <p>
+            Email:
+            <a href="#" class="email-link">bgebreyohannes@sea.yearup.org</a>
+          </p>
         </div>
+        <div class="footer-section">
+          <h3>Follow Us</h3>
+          <ul>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/biniyam-fekede-gebreyohannes-5a5883219"
+                >LinkedIn</a
+              >
+            </li>
+            <li><a href="https://github.com/biniyam-fekede">GitHub</a></li>
+            <li><a href="#">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 My Profile Cards. All rights reserved.</p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
-
