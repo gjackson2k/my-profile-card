@@ -10,7 +10,7 @@ body {
 .navbar {
   display: flex; /* Align items to the start (left) */
   align-items: center;
-  background-color: #333;
+  background-color: grey;
   padding: 10px 20px;
 }
 
