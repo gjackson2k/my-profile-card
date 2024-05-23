@@ -16,6 +16,81 @@
         background: #f4f4f4;
       }
 
+      /* Header Css */
+      header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 28vh;
+        background: #9999cc;
+        margin: 0;
+      }
+      nav {
+        background: #333;
+      }
+      .NavBar {
+        display: flex;
+        justify-content: center;
+      }
+
+      ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+
+      ul li {
+        list-style: none;
+        margin: 0 20px;
+        transition: 0.5s;
+      }
+
+      ul li a {
+        display: block;
+        position: relative;
+        text-decoration: none;
+        padding: 5px;
+        font-size: 18px;
+        font-family: sans-serif;
+        color: #fff;
+        text-transform: uppercase;
+        transition: 0.5s;
+      }
+
+      ul:hover li a {
+        transform: scale(1.5);
+        opacity: 0.2;
+        filter: blur(5px);
+      }
+
+      ul li a:hover {
+        transform: scale(2);
+        opacity: 1;
+        filter: blur(0);
+        text-decoration: none;
+        color: #333333;
+      }
+
+      ul li a:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #6699cc;
+        transition: 0.5s;
+        transform-origin: right;
+        transform: scaleX(0);
+        z-index: -1;
+      }
+
+      ul li a:hover:before {
+        transition: transform 0.5s;
+        transform-origin: left;
+        transform: scaleX(1);
+      }
+
       /* Footer CSS */
       footer {
         background-color: #333;
@@ -100,7 +175,7 @@
   </head>
   <body>
     <header>
-      <h1>My Profile Cards</h1>
+      <h1>Team Triple A's Profile Cards</h1>
       <nav>
         <ul>
           <li><a href="#">Home</a></li>
@@ -110,6 +185,16 @@
         </ul>
       </nav>
     </header>
+    <nav>
+      <div class="NavBar">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Services</a></li>
+        </ul>
+      </div>
+    </nav>
     <div class="profile-card">
       <img
         src="https://picsum.photos/100"
@@ -118,7 +203,7 @@
       />
       <h3>Amir Banks</h3>
       <p>
-        John is a passionate web developer with expertise in creating
+        Amir is a passionate web developer with expertise in creating
         user-friendly interfaces and engaging web experiences.
       </p>
     </div>
@@ -130,7 +215,7 @@
       />
       <h3>Abdi Deresa</h3>
       <p>
-        John is a passionate web developer with expertise in creating
+        Abdi is a passionate web developer with expertise in creating
         user-friendly interfaces and engaging web experiences.
       </p>
     </div>
@@ -140,7 +225,7 @@
         alt="Profile Image"
         class="profile-photo"
       />
-      <h3>Abdi Deresa</h3>
+      <h3>John Doe</h3>
       <p>
         John is a passionate web developer with expertise in creating
         user-friendly interfaces and engaging web experiences.
