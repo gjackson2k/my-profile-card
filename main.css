@@ -24,6 +24,14 @@ h1 {
 }
 
 /* ----------Profile Card CSS---------- */
+
+.profile-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-items: center;
+  justify-content: center;
+}
+
 .profile-card {
   background: white;
   border: 1px solid #ddd;
@@ -51,6 +59,13 @@ h1 {
 
 /* -------For desktop Screens--------- */
 @media (min-width: 1199px) {
+  .nav-links {
+    display: flex;
+  }
+
+  .hamburger {
+    display: none;
+
   .profile-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -61,6 +76,7 @@ h1 {
   .profile-card {
     max-width: 600px;
     margin: 0px;
+
   }
 }
 

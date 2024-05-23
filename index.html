@@ -14,26 +14,31 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
   </head>
-  <body class="grid-wrapper">
+  <body>
     <header>
       <h1>My Profile Cards</h1>
-      <nav class="navbar">
+      <nav class="navbar navbar-expand-lg">
         <a class="navbar-brand" href="#">Navbar</a>
-        <div class="hamburger" id="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="nav-links" id="nav-links">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarColor01"
+          aria-controls="navbarColor01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#"
-                >Home <span class="sr-only">(current)</span></a
-              >
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Features</a>
@@ -45,6 +50,15 @@
               <a class="nav-link" href="#">About</a>
             </li>
           </ul>
+          <form class="form-inline">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+          </form>
         </div>
       </nav>
     </header>
@@ -52,68 +66,54 @@
     <main>
       <div class="profile-container">
         <div class="profile-card">
-          <img
-            src="https://picsum.photos/100"
-            alt="Profile Image"
-            class="profile-photo"
-          />
+          <img src="https://picsum.photos/100" alt="Profile Image" class="profile-photo" />
           <h3>Binyam Haile</h3>
           <p>
-            Binyam is a skilled full-stack Java developer and AWS Certified
-            Solutions Architect with over 7+ years of comprehensive experience
-            in the field, including 5+ years specifically dedicated to
-            Full-Stack development. Committed to delivering high-performance
-            software solutions that adhere to industry coding standards and best
-            practices, Binyam is known for his expertise in clean crafting
-            architecture and meticulous preparation of technical documentation
-            to ensure scalability and maintainability of projects.
+            Binyam is a skilled full-stack Java developer and AWS Certified Solutions Architect with
+            over 7+ years of comprehensive experience in the field, including 5+ years specifically
+            dedicated to Full-Stack development. Committed to delivering high-performance software
+            solutions that adhere to industry coding standards and best practices, Binyam is known
+            for his expertise in clean crafting architecture and meticulous preparation of technical
+            documentation to ensure scalability and maintainability of projects.
           </p>
         </div>
         <div class="profile-card">
-          <img
-            src="https://picsum.photos/101"
-            alt="Profile Image"
-            class="profile-photo"
-          />
+          <img src="https://picsum.photos/101" alt="Profile Image" class="profile-photo" />
           <h3>Chris Le</h3>
           <p>
-            Hi I am Christopher Le, I love problem solving with various creative
-            solutions, writing efficient code, and working in a team environment
-            with a passion for Front-End Development. Enjoy using technology
-            such as Javascript, React.js, Node.js, and much more! I look forward
-            to learning and growing as technology progresses further each year!
+            Hi I am Christopher Le, I love problem solving with various creative solutions, writing
+            efficient code, and working in a team environment with a passion for Front-End
+            Development. Enjoy using technology such as Javascript, React.js, Node.js, and much
+            more! I look forward to learning and growing as technology progresses further each year!
           </p>
         </div>
         <div class="profile-card">
-          <img
-            src="https://picsum.photos/102"
-            alt="Profile Image"
-            class="profile-photo"
-          />
+          <img src="https://picsum.photos/102" alt="Profile Image" class="profile-photo" />
           <h3>Ivan Matev</h3>
           <p>
-            Ivan is an aspiring Software Developer with experience working to
-            improve the performance of organizations serving hundreds of
-            individuals each year. Adept at collaborating with others while
-            ensuring high-quality services and programs. Career history of
-            training and supervising staff, promoting adherence to
-            organizational policies and industry standards.
+            Ivan is an aspiring Software Developer with experience working to improve the
+            performance of organizations serving hundreds of individuals each year. Adept at
+            collaborating with others while ensuring high-quality services and programs. Career
+            history of training and supervising staff, promoting adherence to organizational
+            policies and industry standards.
           </p>
         </div>
         <div class="profile-card">
           <img src="https://picsum.photos/103" alt="Profile Image" class="profile-photo" />
           <h3>Jasmine Rivera</h3>
+          <span?>---------- AI Person ----------</span>
           <p>
-            Jasmine is a passionate environmentalist who loves spending time outdoors, hiking
-            through forests, and exploring nature. With a background in environmental science, she
-            is dedicated to protecting the planet and raising awareness about sustainability issues.
-            In her free time, Jasmine enjoys gardening, practicing yoga, and volunteering at local
-            conservation organizations.
+            Jasmine is a passionate environmentalist who loves spending time
+            outdoors, hiking through forests, and exploring nature. With a background in
+            environmental science, she is dedicated to protecting the planet and raising awareness
+            about sustainability issues. In her free time, Jasmine enjoys gardening, practicing
+            yoga, and volunteering at local conservation organizations.
           </p>
         </div>
         <div class="profile-card">
           <img src="https://picsum.photos/104" alt="Profile Image" class="profile-photo" />
           <h3>Lucas Thompson</h3>
+          <span?>---------- AI Person ----------</span>
           <p>
             Lucas is a tech enthusiast and avid gamer with a knack for problem-solving. He is a
             software engineer by profession, specializing in artificial intelligence and machine
