@@ -18,37 +18,47 @@
       rel="stylesheet"
     />
   </head>
+  <header>
+    <h1>My Profile Cards</h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
   <body class="grid-wrapper">
-    <header>
-      <h1>My Profile Cards</h1>
-      <nav class="navbar">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <div class="hamburger" id="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="nav-links" id="nav-links">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#"
-                >Home <span class="sr-only">(current)</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-
     <main>
       <div class="profile-container">
         <div class="profile-card">
@@ -101,25 +111,36 @@
           </p>
         </div>
         <div class="profile-card">
-          <img src="https://picsum.photos/103" alt="Profile Image" class="profile-photo" />
+          <img
+            src="https://picsum.photos/103"
+            alt="Profile Image"
+            class="profile-photo"
+          />
           <h3>Jasmine Rivera</h3>
           <p>
-            Jasmine is a passionate environmentalist who loves spending time outdoors, hiking
-            through forests, and exploring nature. With a background in environmental science, she
-            is dedicated to protecting the planet and raising awareness about sustainability issues.
-            In her free time, Jasmine enjoys gardening, practicing yoga, and volunteering at local
-            conservation organizations.
+            Jasmine is a passionate environmentalist who loves spending time
+            outdoors, hiking through forests, and exploring nature. With a
+            background in environmental science, she is dedicated to protecting
+            the planet and raising awareness about sustainability issues. In her
+            free time, Jasmine enjoys gardening, practicing yoga, and
+            volunteering at local conservation organizations.
           </p>
         </div>
         <div class="profile-card">
-          <img src="https://picsum.photos/104" alt="Profile Image" class="profile-photo" />
+          <img
+            src="https://picsum.photos/104"
+            alt="Profile Image"
+            class="profile-photo"
+          />
           <h3>Lucas Thompson</h3>
           <p>
-            Lucas is a tech enthusiast and avid gamer with a knack for problem-solving. He is a
-            software engineer by profession, specializing in artificial intelligence and machine
-            learning. When he's not coding, Lucas can be found experimenting with new recipes in the
-            kitchen, playing the guitar, or immersing himself in the latest science fiction novels.
-            He's always up for a challenge and loves pushing the boundaries of innovation.
+            Lucas is a tech enthusiast and avid gamer with a knack for
+            problem-solving. He is a software engineer by profession,
+            specializing in artificial intelligence and machine learning. When
+            he's not coding, Lucas can be found experimenting with new recipes
+            in the kitchen, playing the guitar, or immersing himself in the
+            latest science fiction novels. He's always up for a challenge and
+            loves pushing the boundaries of innovation.
           </p>
         </div>
       </div>
@@ -129,16 +150,23 @@
       <div class="footer-content">
         <div class="footer-section">
           <h3>Contact Us</h3>
+
           <!-- we used email logo and clickable email address -->
+
           <p>
             <span style="font-size: 20px">✉</span>
+
             <a href="mailto:example@gmail.com">example@gmail.com</a>
           </p>
+
           <p>Phone: 123-456-7890</p>
         </div>
+
         <div class="footer-section">
           <h3>Follow Us</h3>
+
           <!-- we used social media icons and clickable links -->
+
           <ul class="social-links">
             <li>
               <a href="https://www.instagram.com/"
@@ -147,6 +175,7 @@
                   alt="Instagram"
               /></a>
             </li>
+
             <li>
               <a href="https://twitter.com/"
                 ><img
@@ -154,6 +183,7 @@
                   alt="Twitter"
               /></a>
             </li>
+
             <li>
               <a href="https://www.facebook.com/"
                 ><img
@@ -164,12 +194,11 @@
           </ul>
         </div>
       </div>
+
       <div class="footer-bottom">
         <p>&copy; 2024 My Profile Cards. All rights reserved.</p>
       </div>
     </footer>
-
-
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -186,6 +215,5 @@
       crossorigin="anonymous"
     ></script>
     <script src="script.js"></script>
-
   </body>
 </html>
