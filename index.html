@@ -18,51 +18,48 @@
       rel="stylesheet"
     />
   </head>
-  <body>
-    <header>
-      <h1>My Profile Cards</h1>
-      <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarColor01"
-          aria-controls="navbarColor01"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
 
-        <div class="collapse navbar-collapse" id="navbarColor01">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-          </ul>
-          <form class="form-inline">
-            <input
-              class="form-control mr-sm-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
-          </form>
-        </div>
-      </nav>
-    </header>
-
+  <header>
+    <h1>My Profile Cards</h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <body class="grid-wrapper">
     <main>
       <div class="profile-container">
         <div class="profile-card">
@@ -99,31 +96,45 @@
           </p>
         </div>
         <div class="profile-card">
-          <img src="https://picsum.photos/103" alt="Profile Image" class="profile-photo" />
+          <img
+            src="https://picsum.photos/103"
+            alt="Profile Image"
+            class="profile-photo"
+          />
           <h3>Jasmine Rivera</h3>
           <span?>---------- AI Person ----------</span>
           <p>
             Jasmine is a passionate environmentalist who loves spending time
-            outdoors, hiking through forests, and exploring nature. With a background in
-            environmental science, she is dedicated to protecting the planet and raising awareness
-            about sustainability issues. In her free time, Jasmine enjoys gardening, practicing
-            yoga, and volunteering at local conservation organizations.
+
+            outdoors, hiking through forests, and exploring nature. With a
+            background in environmental science, she is dedicated to protecting
+            the planet and raising awareness about sustainability issues. In her
+            free time, Jasmine enjoys gardening, practicing yoga, and
+            volunteering at local conservation organizations.
+
           </p>
         </div>
         <div class="profile-card">
-          <img src="https://picsum.photos/104" alt="Profile Image" class="profile-photo" />
+          <img
+            src="https://picsum.photos/104"
+            alt="Profile Image"
+            class="profile-photo"
+          />
           <h3>Lucas Thompson</h3>
           <span?>---------- AI Person ----------</span>
           <p>
-            Lucas is a tech enthusiast and avid gamer with a knack for problem-solving. He is a
-            software engineer by profession, specializing in artificial intelligence and machine
-            learning. When he's not coding, Lucas can be found experimenting with new recipes in the
-            kitchen, playing the guitar, or immersing himself in the latest science fiction novels.
-            He's always up for a challenge and loves pushing the boundaries of innovation.
+            Lucas is a tech enthusiast and avid gamer with a knack for
+            problem-solving. He is a software engineer by profession,
+            specializing in artificial intelligence and machine learning. When
+            he's not coding, Lucas can be found experimenting with new recipes
+            in the kitchen, playing the guitar, or immersing himself in the
+            latest science fiction novels. He's always up for a challenge and
+            loves pushing the boundaries of innovation.
           </p>
         </div>
       </div>
     </main>
+
 
     <!-- Footer Section -->
   <footer id="footer">
